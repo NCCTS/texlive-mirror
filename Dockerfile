@@ -19,6 +19,9 @@ ADD . /docker-build
 RUN chmod -R 777 /docker-build
 RUN /docker-build/setup.sh && rm -rf /docker-build
 
+# node.js http-server will be listening on port 8080
+EXPOSE 8080
+
 # Use phusion/baseimage's init system as the entrypoint:
 # 'entry.sh' starts shell (or tmux) as the 'sailor' user
 # (tmux: with a session named 'texlive')
