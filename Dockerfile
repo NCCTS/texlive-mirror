@@ -1,5 +1,5 @@
 # Docker version 1.4.1, build 5bc2ff8
-FROM nccts/node:0.0.10
+FROM nccts/node:0.0.11
 
 # nccts/texlive-mirror
 # Version: 2014
