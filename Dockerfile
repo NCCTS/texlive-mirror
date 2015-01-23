@@ -7,7 +7,7 @@ MAINTAINER "Michael Bradley" <michael.bradley@nccts.org>
 # Magnificat anima mea Dominum, et exsultavit spiritus meus in Deo salvatore meo.
 
 # Cache buster
-ENV REFRESHED_AT [2014-12-25 Thu 19:55]
+ENV REFRESHED_AT [2014-01-23 Fri 14:47]
 
 # Set environment variables
 ENV HOME /root
