@@ -26,9 +26,10 @@ mkdir -p texlive-mirror
 cd texlive-mirror
 # Can substitute in mirror.txt with preferred CTAN mirror
 mirr=$(cat ../mirror.txt)
-wget --mirror --no-parent ftp://$mirr/
-mv $mirr/* ./
-top_level_mirr_dir=($(echo $mirr | tr "/" "\n"))
+mirr_dir=$(echo $mirr | sed 's/http:\/\///' | sed 's/ftp:\/\///')
+wget --mirror --no-parent --reject "index.html*" --reject ".listing*" $mirr
+mv $mirr_dir/* ./
+top_level_mirr_dir=($(echo $mirr_dir | tr "/" "\n"))
 rm -rf ${top_level_mirr_dir[0]}
 cd ..
 chmod -R 777 texlive-mirror
