@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 touch /var/log/mirror_server.log
 chown root:sailor /var/log/mirror_server.log
