@@ -27,7 +27,7 @@ cd texlive-mirror
 # Can substitute in mirror.txt with preferred CTAN mirror
 mirr=$(cat ../mirror.txt)
 mirr_dir=$(echo $mirr | sed 's/http:\/\///' | sed 's/ftp:\/\///')
-wget --mirror --no-parent --reject "index.html*" --reject ".listing*" $mirr
+wget -nv --mirror --no-parent --reject "index.html*" --reject ".listing*" $mirr
 mv $mirr_dir/* ./
 top_level_mirr_dir=($(echo $mirr_dir | tr "/" "\n"))
 rm -rf ${top_level_mirr_dir[0]}
