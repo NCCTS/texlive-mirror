@@ -17,7 +17,7 @@ cd /home/sailor/texlive-mirror
 find . -type f -exec chmod 444 '{}' \;
 popd
 mkdir -p /home/sailor/bin
-cp /docker-build/support/http.sh /home/sailor/bin
+cp /docker-build/support/mirror_server.sh /home/sailor/bin
 chown -R sailor:sailor /home/sailor/bin
 chmod -R 755 /home/sailor/bin
 
