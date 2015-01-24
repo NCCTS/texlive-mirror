@@ -1,1 +1,1 @@
-bay.uchicago.edu/tex-archive/systems/texlive/tlnet
+ftp://bay.uchicago.edu/tex-archive/systems/texlive/tlnet
