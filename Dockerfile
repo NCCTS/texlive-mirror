@@ -26,7 +26,7 @@ EXPOSE 8080
 # 'entry.sh' starts shell (or tmux) as the 'sailor' user
 # (tmux: with a session named 'texlive')
 ENTRYPOINT ["/sbin/my_init", "--", "/usr/local/bin/entry.sh", "texlive"]
-CMD http.sh
+CMD [""]
 
 # example usage
 # --------------------------------------------------
